@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://checkout-page.cqrlosarch.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/1vC3sNmwYyproRbqyHOi">
       Solution
     </a>
     <span> | </span>
@@ -46,6 +46,7 @@
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 
+- [Workflow Gulp @cqrlosArch](https://github.com/cqrlosArch/workflow-gulp)
 - [Pug](https://pugjs.org/api/getting-started.html)
 - [Sass](https://sass-lang.com/)
 - [Gulp](https://gulpjs.com/)
@@ -63,7 +64,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/cqrlosArch/checkout-page
 
 # Install dependencies
 $ npm install

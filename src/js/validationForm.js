@@ -9,6 +9,10 @@ const validationForm = () => {
 
   form.addEventListener('submit', (e) => {
     span.classList.add('submit--active');
+    setTimeout(() => {
+      span.classList.remove('submit--active');
+    }, 3000);
+
     e.preventDefault();
   });
 };
