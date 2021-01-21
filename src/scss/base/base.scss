@@ -1,0 +1,29 @@
+html {
+  font-family: $montserrat-regular;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white;
+  margin: 0;
+  padding: 1rem 0.5rem;
+  color: $text;
+
+  @include md {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: $placeholder;
+}

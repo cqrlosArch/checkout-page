@@ -1,0 +1,10 @@
+.header {
+  width: 100%;
+  &__title {
+    color: $title;
+    font-size: 24px;
+    @include md {
+      font-size: 28px;
+    }
+  }
+}

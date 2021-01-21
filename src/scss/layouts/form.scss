@@ -1,0 +1,128 @@
+.section {
+  width: 100%;
+  @include md {
+    max-width: 465px;
+  }
+
+  &-form {
+    width: inherit;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    &__title {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+  .form {
+    width: 100%;
+
+    &__group {
+      width: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &--country,
+      &--postal {
+        max-width: 50%;
+        width: 100%;
+      }
+      &--checkbox {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 1rem 0;
+      }
+    }
+    &__container {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+    }
+    &__label {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      &--checkbox {
+        margin: 0;
+        font-size: 12px;
+        margin-left: 1rem;
+      }
+    }
+    &__control {
+      position: relative;
+      width: inherit;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      &--select {
+        border: none;
+      }
+    }
+    &__icon {
+      position: absolute;
+      left: 5px;
+      color: $placeholder;
+    }
+    &__input,
+    &__select {
+      border: none;
+      outline: none;
+      color: $text;
+      font-size: 0.9rem;
+      padding-left: 2rem;
+      width: 100%;
+      height: 40px;
+      border: 1px solid #828282;
+      border-radius: 12px;
+      background-color: transparent;
+    }
+    &__checkbox {
+      outline: none;
+      border: 1px solid #828282;
+      border-radius: 4px;
+      background-color: red;
+    }
+
+    &__option {
+      color: $placeholder;
+    }
+    &__button {
+      outline: none;
+      border: none;
+      height: 55px;
+      width: 165px;
+      color: $white;
+      border-radius: 12px;
+      background-color: $orange;
+      align-self: flex-end;
+    }
+
+    &__error {
+      position: absolute;
+      bottom: -30px;
+      color: $orange;
+      font-size: 12px;
+    }
+
+    .submit {
+      visibility: visible;
+      opacity: 1;
+      color: $orange;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      z-index: -1;
+      transform: translate(-25%, -100%);
+      transition: transform 0.5s ease-in-out;
+    }
+    .submit--active {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-15%, 150%);
+    }
+  }
+}

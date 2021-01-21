@@ -1,0 +1,50 @@
+section.section
+  form#form.form
+    .section-form
+      h2.section-form__title Contact infomation
+      .form__group
+        label(for="email").form__label E-mail
+        .form__control
+          span.material-icons.form__icon email
+          input(type="email" id="email" name="email" placeholder="Enter your email..." required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$").form__input
+      .form__group
+        label(for="phone").form__label Phone
+        .form__control
+          span.material-icons.form__icon phone
+          input(type="tel" id="phone" name="phone" placeholder="Enter your phone...." required).form__input
+    .section-form
+      h2.section-form__title Shipping address
+      .form__group
+        label(for="name").form__label Full name
+        .form__control
+          span.material-icons.form__icon account_circle
+          input(type="text" id="name" name="name" value="Rodney Cotton" required ).form__input
+      .form__group
+        label(for="address").form__label Address
+        .form__control
+          span.material-icons.form__icon home
+          input(type="text" id="address" name="address" placeholder="Your address.." required).form__input
+      .form__group
+        label(for="city").form__label City
+        .form__control
+          span.material-icons.form__icon location_city
+          input(type="text" id="city" name="city" placeholder="Your city.." required).form__input
+      div.form__container
+        .form__group.form__group--country
+          label(for="country").form__label Country
+          .form__control
+            span.material-icons.form__icon public
+            select(name="country").form__select
+              option(value="" selected disabled hidden).form__option.form__option--default Your country..
+              option(value="spain").form__option Spain
+              option(value="france").form__option France
+              option(value="uk").form__option UK
+        .form__group.form__group--postal
+          label(for="postalcode").form__label Postal code
+          .form__control
+            span.material-icons.form__icon markunread_mailbox
+            input(type="text" id="city" name="postalcode" placeholder="Your postal code.." required).form__input
+      .form__group.form__group--checkbox
+        input(type="checkbox" id="save" name="save").form__checkbox
+        label(for="save").form__label.form__label--checkbox Save this information for next time
+      button.form__button#button Continue

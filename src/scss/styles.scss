@@ -1,0 +1,15 @@
+@import './config/normalize.scss';
+@import './config/colors.scss';
+@import './config/breakpoints.scss';
+
+@import './mixins/bpoint.scss';
+@import './mixins/fontface.scss';
+
+@import './base/fonts.scss';
+@import './base/base.scss';
+
+@import './layouts/header.scss';
+@import './layouts/payment.scss';
+@import './layouts/form.scss';
+@import './layouts/main.scss';
+@import './layouts/footer.scss';
